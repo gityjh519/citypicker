@@ -12,6 +12,14 @@
 		F76335A62230B458007EABD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76335A42230B458007EABD2 /* Main.storyboard */; };
 		F76335A82230B459007EABD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76335A72230B459007EABD2 /* Assets.xcassets */; };
 		F76335AB2230B459007EABD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76335A92230B459007EABD2 /* LaunchScreen.storyboard */; };
+		F76335BC2230B4B9007EABD2 /* TransitionManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335B42230B4B9007EABD2 /* TransitionManger.swift */; };
+		F76335BD2230B4B9007EABD2 /* PopBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335B52230B4B9007EABD2 /* PopBaseViewController.swift */; };
+		F76335BE2230B4B9007EABD2 /* CurrentModelContontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335B62230B4B9007EABD2 /* CurrentModelContontroller.swift */; };
+		F76335BF2230B4B9007EABD2 /* city in Resources */ = {isa = PBXBuildFile; fileRef = F76335B72230B4B9007EABD2 /* city */; };
+		F76335C02230B4B9007EABD2 /* ZGPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335B82230B4B9007EABD2 /* ZGPickerViewController.swift */; };
+		F76335C22230B4B9007EABD2 /* ZGCityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335BA2230B4B9007EABD2 /* ZGCityModel.swift */; };
+		F76335C52230B4F4007EABD2 /* ZGPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335C42230B4F4007EABD2 /* ZGPickerView.swift */; };
+		F76335C72230B538007EABD2 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76335C62230B538007EABD2 /* BaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		F76335A72230B459007EABD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76335AA2230B459007EABD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76335AC2230B459007EABD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76335B42230B4B9007EABD2 /* TransitionManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManger.swift; sourceTree = "<group>"; };
+		F76335B52230B4B9007EABD2 /* PopBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopBaseViewController.swift; sourceTree = "<group>"; };
+		F76335B62230B4B9007EABD2 /* CurrentModelContontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentModelContontroller.swift; sourceTree = "<group>"; };
+		F76335B72230B4B9007EABD2 /* city */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city; sourceTree = "<group>"; };
+		F76335B82230B4B9007EABD2 /* ZGPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGPickerViewController.swift; sourceTree = "<group>"; };
+		F76335BA2230B4B9007EABD2 /* ZGCityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGCityModel.swift; sourceTree = "<group>"; };
+		F76335C42230B4F4007EABD2 /* ZGPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZGPickerView.swift; sourceTree = "<group>"; };
+		F76335C62230B538007EABD2 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 		F763359F2230B457007EABD2 /* CityPicker */ = {
 			isa = PBXGroup;
 			children = (
+				F76335B22230B4B9007EABD2 /* CityPicker */,
 				F76335A02230B457007EABD2 /* AppDelegate.swift */,
 				F76335A22230B458007EABD2 /* ViewController.swift */,
 				F76335A42230B458007EABD2 /* Main.storyboard */,
@@ -62,6 +79,29 @@
 				F76335AC2230B459007EABD2 /* Info.plist */,
 			);
 			path = CityPicker;
+			sourceTree = "<group>";
+		};
+		F76335B22230B4B9007EABD2 /* CityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F76335B32230B4B9007EABD2 /* pop */,
+				F76335B72230B4B9007EABD2 /* city */,
+				F76335C62230B538007EABD2 /* BaseModel.swift */,
+				F76335B82230B4B9007EABD2 /* ZGPickerViewController.swift */,
+				F76335C42230B4F4007EABD2 /* ZGPickerView.swift */,
+				F76335BA2230B4B9007EABD2 /* ZGCityModel.swift */,
+			);
+			path = CityPicker;
+			sourceTree = "<group>";
+		};
+		F76335B32230B4B9007EABD2 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				F76335B42230B4B9007EABD2 /* TransitionManger.swift */,
+				F76335B52230B4B9007EABD2 /* PopBaseViewController.swift */,
+				F76335B62230B4B9007EABD2 /* CurrentModelContontroller.swift */,
+			);
+			path = pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76335AB2230B459007EABD2 /* LaunchScreen.storyboard in Resources */,
+				F76335BF2230B4B9007EABD2 /* city in Resources */,
 				F76335A82230B459007EABD2 /* Assets.xcassets in Resources */,
 				F76335A62230B458007EABD2 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76335BE2230B4B9007EABD2 /* CurrentModelContontroller.swift in Sources */,
+				F76335C02230B4B9007EABD2 /* ZGPickerViewController.swift in Sources */,
+				F76335C72230B538007EABD2 /* BaseModel.swift in Sources */,
 				F76335A32230B458007EABD2 /* ViewController.swift in Sources */,
+				F76335BC2230B4B9007EABD2 /* TransitionManger.swift in Sources */,
+				F76335C52230B4F4007EABD2 /* ZGPickerView.swift in Sources */,
 				F76335A12230B457007EABD2 /* AppDelegate.swift in Sources */,
+				F76335BD2230B4B9007EABD2 /* PopBaseViewController.swift in Sources */,
+				F76335C22230B4B9007EABD2 /* ZGCityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

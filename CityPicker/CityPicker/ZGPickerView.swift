@@ -14,6 +14,8 @@ public class ZGPickerView: UIView {
     public var configBtn: UIButton!
     public var cancelBtn: UIButton!
     
+    public lazy var selectedItem = [Int:Int]();
+    
     public var dataModel: PickerDataModelDelegate! {
         didSet{
             reloadData();
@@ -21,6 +23,7 @@ public class ZGPickerView: UIView {
     }
     public override init(frame: CGRect) {
         super.init(frame: frame);
+        
         
         backgroundColor = rgbColor(rgb: 249);
         
@@ -75,6 +78,9 @@ extension ZGPickerView: UIPickerViewDataSource,UIPickerViewDelegate {
     }
     
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        selectedItem[component] = row;
+
         dataModel?.selected(column: component, row: row);
         let counts = dataModel?.itemOfColum ?? 0;
         let fromIdx = component + 1;
@@ -83,6 +89,7 @@ extension ZGPickerView: UIPickerViewDataSource,UIPickerViewDelegate {
         }
         for idx in fromIdx..<counts {
             pickerView.reloadComponent(idx);
+            selectedItem[idx] = 0;
             pickerView.selectRow(0, inComponent: idx, animated: true);
         }
     }
